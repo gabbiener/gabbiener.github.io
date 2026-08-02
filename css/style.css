@@ -1,1 +1,28 @@
+nav {
+    background-color: #222;
+    padding: 15px 30px;
+}
 
+nav ul {
+    list-style: none;      /* removes bullet points */
+    display: flex;         /* makes items horizontal */
+    justify-content: center;
+    gap: 35px;             /* space between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: #4da6ff;
+}
