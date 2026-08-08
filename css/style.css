@@ -75,7 +75,7 @@ body {
     flex: 0 0 280px;
 }
 
-.my-photo img {
+.profile-photo {
     width: 250px;
     height: 250px;
     object-fit: cover;
