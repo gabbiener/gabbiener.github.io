@@ -1,0 +1,18 @@
+[
+  {
+    "title": "My First Research Paper",
+    "authors": "Gabriel Lastname, Author 2, Author 3",
+    "journal": "Nature Photonics",
+    "year": 2026,
+    "doi": "10.1234/example",
+    "pdf": "papers/paper1.pdf"
+  },
+  {
+    "title": "My Second Research Paper",
+    "authors": "Gabriel Lastname, Author 2",
+    "journal": "Optics Letters",
+    "year": 2025,
+    "doi": "10.5678/example",
+    "pdf": "papers/paper2.pdf"
+  }
+]
