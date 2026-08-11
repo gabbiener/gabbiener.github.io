@@ -54,14 +54,10 @@ body {
     background: #fbceb1;
 }
 
-.content {
+.home-main {
     flex: 1;
     padding: 40px;
     max-width: 1000px;
-}
-
-.content section {
-    margin-bottom: 60px;
 }
 
 .my-photo {
