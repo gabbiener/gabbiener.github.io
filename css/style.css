@@ -34,7 +34,7 @@ body {
 .sidebar {
     width: 220px;
     flex-shrink: 0;
-    background: #ff7f50;
+    background: #ffd3ac;
     padding: 25px 0;
 
     position: sticky;
@@ -45,13 +45,13 @@ body {
 .sidebar a {
     display: block;
     padding: 14px 25px;
-    color: #800000;
+    color: #fbceb1;
     text-decoration: none;
     font-size: 16px;
 }
 
 .sidebar a:hover {
-    background: #800020;
+    background: #ff7f50;
 }
 
 .content {
