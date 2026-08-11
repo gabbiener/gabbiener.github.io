@@ -1,53 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Publications</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <h1>Publications</h1>
-
 <div id="publications"></div>
 
 <script>
-fetch("publications.json")
-    .then(response => response.json())
-    .then(publications => {
-
-        const container = document.getElementById("publications");
-
-        publications.forEach(pub => {
-
-            const item = document.createElement("div");
-
-            item.className = "publication";
-
-            item.innerHTML = `
-                <h2>${pub.title}</h2>
-
-                <p>${pub.authors}</p>
-
-                <p>
-                    <i>${pub.journal}</i>, ${pub.year}
-                </p>
-
-                <a href="${pub.pdf}">PDF</a>
-                |
-                <a href="https://doi.org/${pub.doi}">
-                    DOI
-                </a>
-            `;
-
-            container.appendChild(item);
+    fetch("publications.json")
+        .then(response => response.json())
+        .then(publications => {
+            const container = document.getElementById("publications");
+            publications.forEach(pub => {
+                const item = document.createElement("div");
+                item.className = "publication";
+                item.innerHTML = `
+                    <h2>${pub.title}</h2>
+                    <p>${pub.authors}</p>
+                    <p>
+                        <i>${pub.journal}</i>, ${pub.year}
+                    </p>
+                    <a href="${pub.pdf}">PDF</a>
+                    |
+                    <a href="https://doi.org/${pub.doi}">
+                        DOI
+                    </a>
+                `;
+                container.appendChild(item);
+            });
+        })
+        .catch(error => {
+            console.error("Error loading publications:", error);
         });
-
-    })
-    .catch(error => {
-        console.error("Error loading publications:", error);
-    });
 </script>
-
-</body>
-</html>
