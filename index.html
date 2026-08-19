@@ -10,38 +10,28 @@
         <header class="banner">
             <h1>Gabriel Biener</h1>
             <p>
-                Optical & Computational Imaging Scientist | Microscopy • Photonics • Biomedical Imaging • AI
+                Optical & Computational Imaging Scientist • Microscopy • Photonics • Biomedical Imaging • AI
             </p>
         </header>
         <div class="page">
             <nav class="sidebar">
-                <a href="#" onclick="loadPage('home.html'); return false;">Home</a>
-                <a href="#" onclick="loadPage('about.html'); return false;">About</a>
-                <a href="#" onclick="loadPage('publications.html'); return false;">Publications</a>
-                <a href="#" onclick="loadPage('patents.html'); return false;">Patents</a>
-                <a href="#" onclick="loadPage('research.html'); return false;">Research</a>
-                <a href="#" onclick="loadPage('skills.html'); return false;">Skills</a>
-                <a href="#" onclick="loadPage('resume.html'); return false;">Resume/CV</a>
-                <a href="#" onclick="loadPage('contact.html'); return false;">Contact</a>
+                <a href="#" data-page="home.html">Home</a>
+                <a href="#" data-page="about.html">About</a>
+                <a href="#" data-page="publications.html">Publications</a>
+                <a href="#" data-page="patents.html">Patents</a>
+                <a href="#" data-page="research.html">Research</a>
+                <a href="#" data-page="skills.html">Skills</a>
+                <a href="#" data-page="resume.html">Resume/CV</a>
+                <a href="#" data-page="contact.html">Contact</a>
             </nav>
-            <main id="content">
-            </main>
+            <main id="content"></main>
         </div>
         <footer class="footer">
             <a href="https://www.linkedin.com/in/gabriel-biener-b3734028/index.html" target="_blank">
                 <img src="images/linkedin_logo.avif" alt="LinkedIn">
             </a>
         </footer>
-        <script>
-            function loadPage(page) {
-                fetch(page)
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("content").innerHTML = data;
-                    });
-            }
-            // Show Home when website first opens
-            loadPage("home.html");
-        </script>
+        <script src="js/main.js"></script>
+        <script src="js/publications.js"></script>
     </body>
 </html>

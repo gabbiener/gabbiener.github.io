@@ -1,7 +1,7 @@
 [
   {
     "title": "My First Research Paper",
-    "authors": "Gabriel Lastname, Author 2, Author 3",
+    "authors": "Gabriel Biener, Author 2, Author 3",
     "journal": "Nature Photonics",
     "year": 2026,
     "doi": "10.1234/example",
@@ -9,7 +9,7 @@
   },
   {
     "title": "My Second Research Paper",
-    "authors": "Gabriel Lastname, Author 2",
+    "authors": "Author 1, Gabriel Biener, Author 2",
     "journal": "Optics Letters",
     "year": 2025,
     "doi": "10.5678/example",

@@ -89,3 +89,11 @@ body {
     font-size: 17px;
     line-height: 1.7;
 }
+
+#content {
+    padding : 40px;
+}
+
+.publication {
+    font-size: 20px;
+}
