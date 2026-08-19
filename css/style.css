@@ -97,3 +97,12 @@ body {
 .publication {
     font-size: 18px;
 }
+.footer {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
