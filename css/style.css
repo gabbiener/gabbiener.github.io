@@ -40,6 +40,7 @@ body {
     position: sticky;
     top: 0;
     height: 100vh;
+    position: relative;
 }
 
 .sidebar a {
@@ -105,4 +106,41 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+/* Research link and popup container */
+#research-link {
+    position: relative;
+}
+
+/* Popup menu */
+.research-popup {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    min-width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Show popup */
+.research-popup.show {
+    display: block;
+}
+
+/* Project names */
+.research-popup a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+}
+
+/* Mouse over project */
+.research-popup a:hover {
+    background-color: #f0f0f0;
 }
